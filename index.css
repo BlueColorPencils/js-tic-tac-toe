@@ -1,3 +1,44 @@
 html {
-  
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+h2, h3 {
+  padding-bottom: 5px;
+  margin-top: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table td, table th {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 4em;
+    opacity: 0;
+}
+
+table tr td:hover {
+    opacity: 1;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 0;
 }
