@@ -41,10 +41,10 @@ $(document).ready( function() {
        ((player[1] + player[2] + player[3]) == 15) ||
        ((player[4] + player[5] + player[6]) == 15) ||
        ((player[7] + player[8] + player[9]) == 15) ||
-       ((player[7] + player[8] + player[9]) == 15) ||
-       ((player[1] + player[5] + player[9]) == 15) ||
+
        ((player[1] + player[5] + player[9]) == 15) ||
        ((player[3] + player[5] + player[7]) == 15) ||
+
        ((player[1] + player[4] + player[7]) == 15) ||
        ((player[3] + player[6] + player[9]) == 15) ||
        ((player[2] + player[5] + player[8]) == 15) )  {
@@ -57,11 +57,12 @@ $(document).ready( function() {
         $("h3").append(r);
       var headtext = $("h2").text()
         $("h2").text(headtext.replace(headtext, $(this).text()+" is the ULTIMATE CHAMPION!"));
-        $("p").text(turn.replace(turn, "Game Over"));
+        $("p").text(turn.replace(turn, "Game Over 🍕"));
     } else if (plays == 9)  {
-       var r= $('<input id="playagain" type="button" value="Play again?"/>');
-          $("h3").append(r);
-      var headtext = $("h2").text()
+        var r= $('<input id="playagain" type="button" value="Play again?"/>');
+        $("h3").append(r);
+        var headtext = $("h2").text()
+        $("p").text(turn.replace(turn, "Game Over 🍕"));
         $("h2").text(headtext.replace(headtext, "It's a tie! 🍻"));
     }
 
@@ -71,7 +72,7 @@ $(document).ready( function() {
       $("table tr td").empty().text(" ⚪️ ").removeClass('show');
       $("#playagain").remove()
       $("h2").text(headtext.replace(headtext, ""));
-        $("p").text(turn.replace(turn, "Turn: 🍟"));
+      $("p").text(turn.replace(turn, "Turn: 🍟"));
 
       playOnPlaya = {"1": 8, "2": 1, "3":6, "4":3, "5":5, "6":7, "7":4, "8":9, "9":2};
       player1 = {"1":0 , "2":0, "3":0, "4":0, "5":0, "6":0, "7":0, "8":0, "9":0};
