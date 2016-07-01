@@ -6,11 +6,18 @@ h1 {
   margin-bottom: 10px;
 }
 h2, h3 {
-  padding-bottom: 5px;
-  margin-top: 0px;
+  margin: 0px;
+}
+
+h2{
+  font-size: 1.3em;
+}
+#tic-tac-toe{
+    margin: 40px;
 }
 
 table {
+  /*margin-top:20px;*/
     border-collapse: collapse;
     margin: auto;
 }
@@ -41,4 +48,12 @@ table tr th:first-child {
 table tr td:last-child,
 table tr th:last-child {
     border-right: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+  opacity: 0;
 }
